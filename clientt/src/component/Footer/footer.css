@@ -1,0 +1,188 @@
+.div12 {
+  width: 100%;
+  background-color: #474747;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+.sr2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+}
+.sr2-htag{
+   font-family: Playfair Display;
+   font-weight: 600;
+   font-style: Italic;
+   font-size: 32.67px;
+   line-height: 29.33px;
+   letter-spacing: -0.4px;
+   color: #FFFFFF;
+}
+.div-img{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: 35px;
+}
+
+.logo-text {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 250px;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons svg {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #ccc;
+}
+
+
+.sr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex: 2;
+  min-width: 250px;
+}
+
+.page-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-group h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+  
+}
+
+.page-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.page-group ul li {
+  color: #ccc;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 8px;
+  
+}
+
+.page-group ul li:hover {
+  color: #fff;
+}
+
+.sr1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+.insta-heading {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.div14 {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Flip Card */
+.cont4 {
+  perspective: 1000px;
+}
+
+.cardr4 {
+  height: 140px;
+  width: 130px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cont4:hover .cardr4 {
+  transform: rotateY(180deg);
+}
+
+.front4,
+.back4 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.flip-img {
+  height: 140px;
+  width: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.back4 {
+  transform: rotateY(180deg);
+}
+
+
+@media (max-width: 1200px) {
+  .sr1 {
+    display: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .sr {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sr2 {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .div12 {
+    padding: 30px 15px;
+  }
+}
+

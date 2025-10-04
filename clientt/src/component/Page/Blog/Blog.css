@@ -1,0 +1,61 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+    .hh1B,
+    .hh2B {
+        text-align: center;
+    }
+    .hh1B {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    .hh2B {
+        color: rgba(0, 0, 0, 0.541);
+        margin-bottom: 10px;
+    }
+    .backB {
+        width: 100%;
+        background-color: #F9F9F7;
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    .cardB {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        justify-content: center;
+        gap: 20px;
+    }
+    @media (max-width:1272px) {
+        .cardB {
+        display: grid;
+        grid-template-columns: 300px 300px 300px ;
+        grid-template-rows: 300px 300px 300px 300px;
+        justify-content: center;
+        gap: 20px;
+    }
+    }
+    @media (max-width:962px) {
+        .cardB {
+        grid-template-columns: 300px 300px  ;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+    }
+    }
+    @media (max-width:962px) {
+        .cardB {
+        grid-template-columns: 300px  ;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    }
+    }
+    .hadderB img {
+        height: 200px;
+        width: 100%;
+    }
+    .fooderB {
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px ;
+    }

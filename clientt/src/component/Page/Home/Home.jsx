@@ -1,6 +1,5 @@
-import React from 'react'
-import "./Home.css"
-import Nav from '../components/Nav'
+import React from 'react';
+import './Home.css';
 import Manu from '/manu-cardC.png';
 import ManuA from '/manu-cardD.png';
 import ManuB from '/manu-cardB.png';
@@ -24,12 +23,10 @@ import Imgo from '/HFCARA.png';
 import FooterA from '/FooterA.png'
 import FooterB from '/FooterB.png'
 import FooterC from '/FooterC.png'
+import Navbar from '../../Navbar/navbar';
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { TbDiscountFilled } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
-
-
-
 
 const products = [
   {
@@ -61,11 +58,10 @@ const products = [
       "In the new era of technology we look in the future with certainty and pride for our life."
   }
 ];
-
 function Home() {
   return (
     <>
-     <Nav />
+     {/* <Navbar/> */}
       <div className="home-main">
         <div className="main">
           <h1>
@@ -319,5 +315,6 @@ function Home() {
     </>
   );
 }
-
 export default Home;
+
+

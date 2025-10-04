@@ -1,0 +1,148 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ 
+ .hh1C {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .hh2C {
+        text-align: center;
+    }
+
+    .backC {
+        background-color: #F9F9F7;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 280px;
+    }
+
+    .cardC {
+        height: 380px;
+        width: 500px;
+        position: absolute;
+        background-color: white;
+        box-shadow: #474747 20px 20px 0px 0px;
+        margin-top: 20px;
+        border-radius: 20px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .rrC {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .inpC {
+        height: 30px;
+        width: 190px;
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+
+    .inp2C {
+        width: 410px;
+        height: 30px;
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+
+    .label1C {
+        margin-left: 42px;
+        margin-right: 42px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .div12C {
+        margin-top: 10px;
+        height: 500px;
+        width: 100%;
+        background-color: #474747;
+        padding: 50px;
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .inp3C {
+        height: 90px;
+        width: 410px;
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+
+    .cardC button {
+        width: 410px;
+        height: 30px;
+        border-radius: 20px;
+        margin-left: 42px;
+        margin-right: 42px;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+
+    @media (max-width:520px) {
+        .cardC {
+            width: 300px;
+            height: 400px;
+        }
+
+        .rrC {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .inpC {
+            width: 280px;
+        }
+
+        .label1C {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .inp2C {
+            width: 280px;
+        }
+
+        .inp3C {
+            height: 60px;
+            width: 280px;
+        }
+
+        .cardC button {
+            width: 280px;
+            height: 30px;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .card2C{
+            margin-top: 100px;
+        }
+    }
+    .card2C{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 80px;
+        justify-content: center;
+        padding-top:220px ;
+        /* margin-bottom: 10px; */
+        gap: 10px;
+    }
+    .callC h5{
+        color: red;
+    }

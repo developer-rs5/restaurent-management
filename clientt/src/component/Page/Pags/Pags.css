@@ -1,0 +1,115 @@
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+    .hh1P,
+    .hh2P,
+    .hh3P {
+        text-align: center;
+    }
+
+    .hh1P {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+    .div1P {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 800px;
+        grid-template-rows: 500px 800px 600px;
+        background-color: #F9F9F7;
+    }
+    @media (max-width:870px) {
+        .div1P{
+            grid-template-columns: 500px;
+            grid-template-rows: 500px 1020px 600px;
+        }
+        .hh3P{
+            margin-top: 50px;
+        }
+        .hh1P{
+            font-size: 40px;
+        }
+    }
+    @media (max-width:534px) {
+        .div1P{
+            grid-template-columns: 300px;
+            grid-template-rows: 500px 1540px 600px;
+            background-color: #F9F9F7;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .hh3P{
+            margin-top: 130px;
+        }
+        .hh1P{
+            font-size: 35px;
+        }
+
+    }
+    .div2P img,
+    .div3P img {
+        width: 100%;
+        height: 460px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .spanP {
+        color: rgba(0, 0, 0, 0.616);
+    }
+
+    .footerP h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mP {
+        margin-top: 100px;
+    }
+
+    .m2P {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cardP{
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px ;
+        grid-template-rows: 300px ;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .hadderP img {
+        height: 200px;
+        width: 100%;
+    }
+    .fooderP {
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px ;
+    }
+    @media (max-width:1260px) {
+        .cardP{
+        grid-template-columns: 300px 300px  300px;
+        grid-template-rows: 300px 300px ;
+       }
+    }
+    @media (max-width:980px) {
+        .cardP{
+        grid-template-columns: 300px 300px ;
+        grid-template-rows: 300px 300px  ;
+       }
+    }
+    @media (max-width:633px) {
+        .cardP{
+        grid-template-columns: 300px  ;
+        grid-template-rows: 300px 300px  300px ;
+       }
+    }
