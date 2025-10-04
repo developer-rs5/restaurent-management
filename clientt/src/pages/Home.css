@@ -1,0 +1,557 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.home-main {
+    background-image: url('rohit.png');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    height: 250px;
+    width: 400px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.H-MainbA, .H-MainbB {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.H-MainbA {
+    background-color: #AD343E;
+    color: white;
+    margin-right: 10px;
+}
+
+.H-MainbB {
+    background-color:white;
+    color: #333;
+    margin-left: 10px;
+}
+.name-plat{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.m-card{
+    height: 350px;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.527);
+    border-radius: 10px;
+}
+.header{
+    height: 120px;
+    margin-top: 20px;
+
+    
+}
+.header img{
+    height: 100px;
+    width: 99px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.footer h2{
+    color: #AD343E;
+    margin-top: 25px;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card2 {
+        height: auto;
+        width: 100%;
+        background-color: #F9F9F7;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card3 {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px;
+        justify-content: space-around;
+    }
+
+    .hadder img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .footerR {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .footerR h1 {
+        font-family: unset;
+    }
+
+    .footerR p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .footerR button {
+        margin-top: 30px;
+        height: 40px;
+        width: 140px;
+        border-radius: 20px;
+    }
+
+    @media (max-width:850px) {
+        .card3 {
+            grid-template-columns: 400px;
+            grid-template-rows: 400px 400px;
+        }
+
+        .card2 {
+            height: 820px;
+        }
+    }
+
+    @media (max-width:430px) {
+        .card3 {
+            grid-template-columns: 300px;
+            grid-template-rows: 200px 400px;
+            gap: 30px;
+        }
+
+        .hadder img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .card2 {
+            height: 700px;
+        }
+    }
+
+    .hh1 {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+
+    .card4 {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 400px;
+    }
+
+    @media (max-width:1260px) {
+        .card4 {
+            display: grid;
+            gap: 40px;
+            justify-content: space-evenly;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 400px 400px;
+        }
+    }
+
+    @media (max-width:680px) {
+        .card4 {
+            grid-template-columns: 300px;
+            grid-template-rows: 400px 400px 400px;
+        }
+    }
+
+    .hadder1 img {
+        height: 320px;
+        width: 100%;
+    }
+
+
+    .footer1 {
+        height: 80px;
+        width: 100%;
+    }
+
+    .footer1 h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card5 {
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        grid-template-columns: 300px 300px 400px;
+        grid-template-rows: 410px;
+    }
+
+    .cont {
+        perspective: 1000px;
+    }
+
+    .cardr {
+        height: 400px;
+        width: 300px;
+        position: relative;
+        transform: rotateY('0');
+        transition: 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .cont:hover .cardr {
+        transform: rotateY(180deg);
+    }
+
+    .front,
+    .back {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        backface-visibility: hidden;
+        font-size: 20px;
+        color: white;
+    }
+
+    .front img,
+    .back img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .back {
+        transform: rotateY(180deg);
+    }
+
+    .cont2 {
+        perspective: 1000px;
+    }
+
+    .cardr2 {
+        height: 240px;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        transform: rotateY('0');
+        transition: 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .cont2:hover .cardr2 {
+        transform: rotateY(180deg);
+    }
+
+    .front2,
+    .back2 {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        backface-visibility: hidden;
+        font-size: 20px;
+        color: white;
+    }
+
+    .front2 img,
+    .back2 img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .back2 {
+        transform: rotateY(180deg);
+    }
+
+    .cont3 {
+        perspective: 1000px;
+    }
+
+    .cardr3 {
+        height: 140px;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        transform: rotateY('0');
+        transition: 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .cont3:hover .cardr3 {
+        transform: rotateY(180deg);
+    }
+
+    .front3,
+    .back3 {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        backface-visibility: hidden;
+        font-size: 20px;
+        color: white;
+    }
+
+    .front3 img,
+    .back3 img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .back3 {
+        transform: rotateY(180deg);
+    }
+
+
+    .div3 {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .div3 h1 {
+        font-size: 40px;
+    }
+
+    .div3 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .div4 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    @media (max-width:1070px) {
+        .div2 {
+            display: none;
+        }
+
+        .card5 {
+            grid-template-columns: 300px 400px;
+            grid-template-rows: 410px;
+        }
+    }
+
+    @media (max-width:730px) {
+        .card5 {
+            grid-template-columns: 300px;
+            grid-template-rows: 410px 410px;
+        }
+    }
+
+    .card6 {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 280px;
+    }
+
+    .div5 {
+        background-color: #F9F9F7;
+        border-radius: 20px 20px 0px 0px;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .hadder3 {
+        height: 150px;
+        width: 100%;
+        border-bottom: 2px solid #818177;
+        ;
+    }
+
+    .hadder3 h3 {
+        color: rgb(216, 52, 52);
+        font-size: 20px;
+    }
+
+    .hadder3 p {
+        margin-top: 20px;
+    }
+
+    .footer3 {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .footer4 h5 {
+        margin-top: 10px;
+    }
+
+    @media (max-width:960px) {
+        .card6 {
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 280px 280px;
+        }
+    }
+
+    @media (max-width:640px) {
+        .card6 {
+            grid-template-columns: 300px;
+            grid-template-rows: 280px 280px 280px;
+        }
+    }
+
+    .div6 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .div6 button {
+        height: 40px;
+        border-radius: 20px;
+        width: 140px;
+        border: none;
+        background-color: rgb(216, 52, 52);
+        color: white;
+    }
+
+    .card7 {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 450px 250px 250px;
+        grid-template-rows: 600px;
+        gap: 30px;
+    }
+
+    .hadder4 img {
+        height: 450px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .footer4 {
+        height: 130px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    .div8{
+        width: 250px;
+        height: 600px;
+        /* border: 2px solid; */
+    }
+    .div9{
+        width: 250px;
+        height: 300px;
+        /* border: 2px solid; */
+    }
+    footer p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+
+    .hadder5 img {
+        border-radius: 20px 20px 0px 0px;
+        height: 180px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer5 {
+        padding: 20px;
+        height: 100px;
+        border-radius: 0px 0px 20px 20px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .div11 {
+        padding-top: 6px;
+        margin-top: 30px;
+        background-color: #e7e7de;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width:1030px) {
+        .div8 {
+            display: none;
+        }
+
+        .card7 {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 450px;
+            grid-template-rows: 600px;
+            gap: 30px;
+        }
+    }
+
+    @media (max-width:480px) {
+        .card7 {
+            grid-template-columns: 300px;
+        }
+
+        .budiv6 {
+            display: none;
+        }
+
+        .hadder4 img {
+            height: 350px;
+            width: 100%;
+        }
+
+        .footer4 {
+            height: 200px;
+        }
+    }
+
+
+
