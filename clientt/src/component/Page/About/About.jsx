@@ -326,7 +326,7 @@ function About() {
               <div>
                 <h4>{item.name}</h4>
                 <h5>{item.location}</h5>
-              </div>
+              </div>  
             </div>
           </div>
         ))}
