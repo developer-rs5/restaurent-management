@@ -1,5 +1,21 @@
 {
+  "name": "bilu-badmos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node index.js",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.2"
+  },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.0"
   }
 }
